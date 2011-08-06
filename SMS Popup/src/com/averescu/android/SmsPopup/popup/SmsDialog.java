@@ -41,6 +41,15 @@ public class SmsDialog extends Activity {
 
 		finish();
 	}
+	
+	public void replyClickHandler(View target) {
+
+		Intent i = new Intent(this, SmsReply.class);
+		i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		i.putExtra("phoneNo", phoneNo);
+		startActivity(i);
+		
+	}
 
 	public void closeClickHandler(View target) {
 		finish();
