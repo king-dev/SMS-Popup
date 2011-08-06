@@ -17,7 +17,7 @@ public class SmsDialog extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.popup);
+		setContentView(R.layout.popup_multisms);
 
 		smsText = (TextView) findViewById(R.id.smsText);
 
@@ -37,9 +37,12 @@ public class SmsDialog extends Activity {
 				| Intent.FLAG_ACTIVITY_SINGLE_TOP
 				| Intent.FLAG_ACTIVITY_CLEAR_TOP;
 		conversations.setFlags(flags);
-
 		startActivity(conversations);
 
+		finish();
 	}
 
+	public void closeClickHandler(View target) {
+		finish();
+	}
 }

@@ -1,6 +1,5 @@
 package com.averescu.android.SmsPopup;
 
-
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
