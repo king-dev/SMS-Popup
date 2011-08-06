@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="SMS Popup">
+		<com.averescu.android.SmsPopup.preferences.SmsPreference
+              android:title="@string/pref_popup_title"
+              android:summaryOn="@string/pref_popup_enabled"
+              android:summaryOff="@string/pref_popup_disabled"
+              android:defaultValue="true" />
+	</PreferenceCategory>
+
+</PreferenceScreen>
